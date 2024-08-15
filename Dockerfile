@@ -24,7 +24,7 @@ WORKDIR /home/user
 
 COPY config.yaml .
 
-$RUN cookiecutter --config-file config.yaml gh:plotly/dash-component-boilerplate
+RUN cookiecutter --config-file config.yaml gh:plotly/dash-component-boilerplate
 
 # RUN npx create-react-app app
 
