@@ -1,5 +1,5 @@
 {
   "project_name": "Andrew Gaitskell Component",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
-  "author": "Andrew C Gaitskell"
+  "author": "Andrew Gaitskell"
 }
