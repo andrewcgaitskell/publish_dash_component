@@ -2,6 +2,8 @@ FROM fedora:latest
 
 RUN python3 --version
 
+RUN yum install nodejs
+
 RUN node --version
 
 RUN yum update
