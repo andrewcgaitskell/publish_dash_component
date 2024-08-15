@@ -2,8 +2,8 @@ default_context:
     full_name: "Andrew Gaitskell"
     email: "andrew@gaitskell.com"
     github_username: "andrewcgaitskell"
-cookiecutters_dir: "/home/home_user/Code/cookie_cutter_dir//"
-replay_dir: "/home/home_user/Code/replay_dir/"
+cookiecutters_dir: "/home/root/cookie_cutter_dir/"
+replay_dir: "/home/root/replay_dir/"
 abbreviations:
     pp: https://github.com/andrewcgaitskell/publish_dash_component.git
     gh: https://github.com/{0}.git
