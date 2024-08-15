@@ -2,19 +2,19 @@ FROM fedora:latest
 
 RUN python3 --version
 
-RUN yum install nodejs
+RUN yum install -y nodejs
 
 RUN node --version
 
-RUN yum update
+RUN yum update -y
 
 RUN mkdir /home/user
 
 RUN mkdir /home/user/cookie_cutter_dir/
 RUN mkdir /home/user/replay_dir/
 
-#RUN pip install cookiecutter
-#RUN pip install virtualenv
+RUN pip install cookiecutter
+RUN pip install virtualenv
 
 WORKDIR /home/user
 
