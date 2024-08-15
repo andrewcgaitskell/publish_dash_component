@@ -8,6 +8,8 @@ RUN pip3 --version
 
 RUN dnf install -y nodejs
 
+RUN dnf install -y git
+
 RUN node --version
 
 RUN yum update -y
