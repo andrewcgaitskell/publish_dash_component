@@ -2,7 +2,7 @@ FROM fedora:latest
 
 RUN python3 --version
 
-RUN dnf install python3-pip
+RUN dnf install -y python3-pip
 
 RUN pip3 --version
 
