@@ -1,23 +1,24 @@
-FROM node:22.6-bookworm
+FROM fedora:latest
 
 RUN python3 --version
 
-RUN apt-get update && \
-    apt-get install -y python3 python3-pip
+RUN node --version
+
+RUN yum update
 
 RUN mkdir /home/user
 
 RUN mkdir /home/user/cookie_cutter_dir/
 RUN mkdir /home/user/replay_dir/
 
-RUN pip install cookiecutter
-RUN pip install virtualenv
+#RUN pip install cookiecutter
+#RUN pip install virtualenv
 
 WORKDIR /home/user
 
 COPY config.yaml .
 
-RUN cookiecutter --config-file config.yaml gh:plotly/dash-component-boilerplate
+$RUN cookiecutter --config-file config.yaml gh:plotly/dash-component-boilerplate
 
 # RUN npx create-react-app app
 
