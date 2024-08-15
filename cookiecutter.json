@@ -1,5 +1,18 @@
 {
-  "project_name": "Andrew Gaitskell Component",
-  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
-  "author": "Andrew Gaitskell"
+  "project_name": "Andrew Gaitskells dash component",
+  "project_shortname": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_') }}",
+  "component_name": "{{ cookiecutter.project_shortname.split('_')|map('capitalize')|join('') }}",
+  "jl_prefix": "",
+  "r_prefix": "",
+  "author_name": "Andrew Gaitskell",
+  "author_email": "andrew@gaitskell.com",
+  "github_org": "",
+  "description": "DMTools Components",
+  "use_async": ["False", "True"],
+  "component_type": ["Function Component", "Class Component"],
+  "license": [
+    "MIT License"
+  ],
+  "publish_on_npm": true,
+  "install_dependencies": true
 }
