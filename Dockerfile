@@ -25,8 +25,9 @@ RUN pip3 install virtualenv
 WORKDIR /home/user
 
 COPY config.yaml .
+COPY cookiecutter.json .
 
-RUN cookiecutter --config-file config.yaml gh:plotly/dash-component-boilerplate
+RUN cookiecutter --no-input gh:plotly/dash-component-boilerplate
 
 # RUN npx create-react-app app
 
