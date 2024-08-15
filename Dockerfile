@@ -2,7 +2,11 @@ FROM fedora:latest
 
 RUN python3 --version
 
-RUN yum install -y nodejs
+RUN dnf install python3-pip
+
+RUN pip3 --version
+
+RUN dnf install -y nodejs
 
 RUN node --version
 
