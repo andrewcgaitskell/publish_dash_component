@@ -13,8 +13,8 @@ RUN mkdir /home/user
 RUN mkdir /home/user/cookie_cutter_dir/
 RUN mkdir /home/user/replay_dir/
 
-RUN pip install cookiecutter
-RUN pip install virtualenv
+RUN pip3 install cookiecutter
+RUN pip3 install virtualenv
 
 WORKDIR /home/user
 
