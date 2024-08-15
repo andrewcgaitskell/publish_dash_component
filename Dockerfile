@@ -3,7 +3,7 @@ FROM node:22.6-bookworm
 RUN python3 --version
 
 RUN apt-get update && \
-    apt-get install -y python3=3.12 python3-pip
+    apt-get install -y python3 python3-pip
 
 RUN mkdir /home/user
 
